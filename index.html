@@ -43,7 +43,7 @@
                 </div>
                  <div class="flex items-center space-x-2">
                     <span class="text-xs text-gray-500 mr-2"></span>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMOnp6HhM1joWD9tNBOK3NAWEueL_fCbCp-Q&s" alt="Athena Education Logo" class="h-10 object-contain">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMOnp6HhM1joWD9tNBOK3NAWEueL_fCp-Q&s" alt="Athena Education Logo" class="h-10 object-contain">
                 </div>
             </nav>
         </header>
@@ -98,6 +98,15 @@
                             <button class="mt-4 w-full bg-purple-800 text-white py-2 rounded-lg hover:bg-purple-900 transition-colors">Sign Up Here</button>
                         </a>
                     </div>
+                    <!-- PD Card 4: Danielson Self-Assessment -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300">
+                         <span class="inline-block bg-teal-100 text-teal-800 text-xs px-3 py-1 rounded-full mb-3">Self-Assessment</span>
+                        <h4 class="text-xl font-semibold mb-2">Danielson Self-Assessment</h4>
+                        <p class="text-gray-600 mb-4">Access the Danielson Self-Assessment framework and resources to reflect on your practice.</p>
+                        <a href="https://brandonabaki-design.github.io/Danielson-PD/" target="_blank" rel="noopener noreferrer">
+                            <button class="mt-4 w-full bg-teal-700 text-white py-2 rounded-lg hover:bg-teal-800 transition-colors">Access Tool</button>
+                        </a>
+                    </div>
                 </div>
             </section>
 
@@ -117,7 +126,7 @@
                      <!-- Strategy Card -->
                     <a href="#" class="maintenance-link block">
                         <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300 text-center h-full">
-                            <div class="text-4xl text-green-600 mb-3">🤝</div>
+                            <div class="text-4xl text-green-600 mb-3">👥</div>
                             <h4 class="text-lg font-semibold mb-2">Collaborative Learning</h4>
                             <p class="text-sm text-gray-600">Strategies for effective group work and peer teaching.</p>
                         </div>
@@ -125,7 +134,7 @@
                      <!-- Strategy Card -->
                     <a href="#" class="maintenance-link block">
                         <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300 text-center h-full">
-                            <div class="text-4xl text-purple-600 mb-3">📊</div>
+                            <div class="text-4xl text-purple-600 mb-3">📋</div>
                             <h4 class="text-lg font-semibold mb-2">Formative Assessment</h4>
                             <p class="text-sm text-gray-600">Tools for checking understanding in real-time.</p>
                         </div>
@@ -218,6 +227,14 @@
             </section>
 
         </main>
+        
+        <!-- Floating Help Button -->
+        <button id="ask-for-help-btn" class="fixed bottom-6 right-6 bg-blue-800 text-white p-4 rounded-full shadow-lg hover:bg-blue-900 transition-colors z-40 flex items-center justify-center" aria-label="Ask for help">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.79 4 4 0 1.98-1.79 4-4 4-1.742 0-3.223-.835-3.772-2M12 18.5v.01M12 4.5v.01M4.5 12v.01M19.5 12v.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </button>
+
 
         <!-- Footer -->
         <footer class="bg-blue-900 text-white">
@@ -276,6 +293,38 @@
         </div>
     </section>
 
+    <!-- Help Section (Hidden by default) -->
+    <section id="help-section" class="hidden min-h-screen bg-gray-50 flex items-center justify-center p-4">
+        <div class="text-center bg-white p-8 sm:p-12 rounded-lg shadow-xl max-w-md w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-blue-800 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.79 4 4 0 1.98-1.79 4-4 4-1.742 0-3.223-.835-3.772-2M12 18.5v.01M12 4.5v.01M4.5 12v.01M19.5 12v.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h1 class="text-3xl font-bold text-blue-900 mb-2">Need Assistance?</h1>
+            <p class="text-gray-600 mb-8">Contact Mr. Brandon for any questions or support with the T&L Playbook.</p>
+            
+            <div class="space-y-4 text-left bg-gray-50 p-6 rounded-lg">
+                <div>
+                    <strong class="text-gray-900">Email:</strong>
+                    <div class="flex items-center space-x-2">
+                        <p id="copy-email" class="block text-blue-600 cursor-pointer hover:underline">brandon.walid@wschool.ae</p>
+                        <span id="email-copied-msg" class="text-sm text-green-600 hidden">Copied!</span>
+                    </div>
+                </div>
+                <div>
+                    <strong class="text-gray-900">Phone / WhatsApp:</strong>
+                    <div class="flex items-center space-x-2">
+                        <p id="copy-phone" class="block text-blue-600 cursor-pointer hover:underline">+971 50 789 6519</p>
+                        <span id="phone-copied-msg" class="text-sm text-green-600 hidden">Copied!</span>
+                    </div>
+                </div>
+            </div>
+
+            <button id="return-home-from-help-btn" class="mt-8 bg-blue-800 text-white py-3 px-6 rounded-lg hover:bg-blue-900 transition-colors w-full sm:w-auto">
+                Return to Homepage
+            </button>
+        </div>
+    </section>
+
     <script>
         // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -296,12 +345,65 @@
         const mainContent = document.getElementById('main-content');
         const maintenanceSection = document.getElementById('maintenance-section');
         const hotsDetailsSection = document.getElementById('hots-details-section');
+        const helpSection = document.getElementById('help-section'); // Added help section
         
         const maintenanceLinks = document.querySelectorAll('.maintenance-link');
         const returnHomeBtn = document.getElementById('return-home-btn');
         
         const hotsDetailsBtn = document.getElementById('hots-details-btn');
         const returnHomeFromHotsBtn = document.getElementById('return-home-from-hots-btn');
+
+        const askForHelpBtn = document.getElementById('ask-for-help-btn'); // Added help button
+        const returnHomeFromHelpBtn = document.getElementById('return-home-from-help-btn'); // Added return from help
+
+        // --- New Copy to Clipboard Logic ---
+        const copyEmailEl = document.getElementById('copy-email');
+        const copyPhoneEl = document.getElementById('copy-phone');
+        const emailCopiedMsg = document.getElementById('email-copied-msg');
+        const phoneCopiedMsg = document.getElementById('phone-copied-msg');
+
+        function copyToClipboard(text, msgElement) {
+            // Use execCommand as navigator.clipboard.writeText might be blocked in iframes
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.style.position = 'fixed'; // Prevent scrolling to bottom of page
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                // Show "Copied!" message
+                if (msgElement) {
+                    msgElement.classList.remove('hidden');
+                    // Hide other message if visible
+                    if (msgElement === emailCopiedMsg) {
+                        phoneCopiedMsg.classList.add('hidden');
+                    } else {
+                        emailCopiedMsg.classList.add('hidden');
+                    }
+                    // Hide after 2 seconds
+                    setTimeout(() => {
+                        msgElement.classList.add('hidden');
+                    }, 2000);
+                }
+            } catch (err) {
+                console.error('Failed to copy text: ', err);
+            }
+            document.body.removeChild(textarea);
+        }
+
+        if (copyEmailEl) {
+            copyEmailEl.addEventListener('click', () => {
+                copyToClipboard('brandon.walid@wschool.ae', emailCopiedMsg);
+            });
+        }
+
+        if (copyPhoneEl) {
+            copyPhoneEl.addEventListener('click', () => {
+                copyToClipboard('+971507896519', phoneCopiedMsg);
+            });
+        }
+        // --- End of New Logic ---
 
         function showMaintenancePage() {
             mainContent.classList.add('hidden');
@@ -315,10 +417,20 @@
             window.scrollTo(0, 0);
         }
 
+        function showHelpPage() { // Added help page function
+            mainContent.classList.add('hidden');
+            helpSection.classList.remove('hidden');
+            // Reset copied messages when opening
+            if(emailCopiedMsg) emailCopiedMsg.classList.add('hidden');
+            if(phoneCopiedMsg) phoneCopiedMsg.classList.add('hidden');
+            window.scrollTo(0, 0);
+        }
+
         function showHomePage() {
             mainContent.classList.remove('hidden');
             maintenanceSection.classList.add('hidden');
             hotsDetailsSection.classList.add('hidden');
+            helpSection.classList.add('hidden'); // Ensure help section is hidden
         }
 
         maintenanceLinks.forEach(link => {
@@ -341,6 +453,18 @@
 
         if (returnHomeFromHotsBtn) {
             returnHomeFromHotsBtn.addEventListener('click', showHomePage);
+        }
+
+        // Added event listeners for help button
+        if (askForHelpBtn) {
+            askForHelpBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                showHelpPage();
+            });
+        }
+
+        if (returnHomeFromHelpBtn) {
+            returnHomeFromHelpBtn.addEventListener('click', showHomePage);
         }
 
     </script>
