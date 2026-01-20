@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Wahda Private School | Teaching & Learning Guide</title>
+    <title>Al Wahda Private School | Teaching & Learning Playbook</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,7 +55,7 @@
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyN3mWov9dfmibFROZWaV8thDqrITIPkcJWw&s" alt="Al Wahda Private School Logo" class="h-12 w-12 object-contain">
                      <div>
                         <h1 class="text-xl font-bold text-blue-900">Al Wahda Private School</h1>
-                        <p class="text-sm text-gray-600">Teaching & Learning Guide</p>
+                        <p class="text-sm text-gray-600">Teaching & Learning Playbook</p>
                     </div>
                 </div>
                 <div class="hidden md:flex items-center space-x-4">
@@ -83,11 +83,32 @@
         <!-- Main Content -->
         <main class="container mx-auto px-6 py-12">
 
+            <!-- Intro Video Section -->
+            <section class="mb-16">
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+                        <div class="aspect-video bg-black relative w-full">
+                            <!-- Ensure your video file is named 'intro_video.mp4' and is in the same folder -->
+                            <video controls class="w-full h-full">
+                                <source src="intro_video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="p-6 text-center bg-blue-50">
+                            <h3 class="text-2xl font-bold text-blue-900 mb-2">Welcome to the Playbook</h3>
+                            <p class="text-gray-700">Watch this brief introduction to understand the purpose of this website and how to navigate it.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Professional Development Section -->
             <section id="pd" class="mb-16">
                 <h3 class="text-3xl font-bold text-blue-900 mb-2 text-center">Professional Development</h3>
                 <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">Engage in continuous learning with our curated workshops and training sessions designed to foster innovation in the classroom.</p>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Main Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
                     
                     <!-- New Module: Success Criteria -->
                     <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300 border-l-4 border-indigo-600">
@@ -135,16 +156,6 @@
                         </a>
                     </div>
                     
-                    <!-- PD Card 3: AI Training -->
-                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300">
-                         <span class="inline-block bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full mb-3">Special Training</span>
-                        <h4 class="text-xl font-semibold mb-2">Additional AI Training</h4>
-                        <p class="text-gray-600 mb-4">Interested in more advanced AI tools? Sign up for a special session hosted by Mr. Brandon.</p>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScpCjtK68_9XsClcMTgf8HNvbXFl2lKzC3bpN_4oHKl2BAzeA/viewform?usp=header" target="_blank" rel="noopener noreferrer">
-                            <button class="mt-4 w-full bg-purple-800 text-white py-2 rounded-lg hover:bg-purple-900 transition-colors">Sign Up Here</button>
-                        </a>
-                    </div>
-                    
                     <!-- PD Card 4: Danielson Self-Assessment -->
                     <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300">
                          <span class="inline-block bg-teal-100 text-teal-800 text-xs px-3 py-1 rounded-full mb-3">Self-Assessment</span>
@@ -155,6 +166,26 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Featured Banner: AI Training -->
+                <div class="mt-8 bg-gradient-to-r from-purple-50 to-white rounded-xl p-8 border border-purple-100 flex flex-col md:flex-row items-center justify-between shadow-sm hover:shadow-md transition-shadow">
+                    <div class="mb-6 md:mb-0 md:mr-8 max-w-2xl">
+                        <div class="flex items-center mb-3">
+                            <span class="inline-block bg-purple-100 text-purple-800 text-xs font-bold px-3 py-1 rounded-full">Special Training Event</span>
+                            <span class="ml-2 text-purple-600 text-sm font-semibold">Limited Seats</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-purple-900 mb-2">Additional AI Training with Mr. Brandon</h4>
+                        <p class="text-gray-700">Interested in mastering advanced AI tools for the classroom? Join us for an exclusive deep-dive session designed to supercharge your lesson planning and resource creation.</p>
+                    </div>
+                    <div class="flex-shrink-0 w-full md:w-auto">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScpCjtK68_9XsClcMTgf8HNvbXFl2lKzC3bpN_4oHKl2BAzeA/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+                            <button class="w-full md:w-auto bg-purple-700 text-white py-3 px-8 rounded-lg hover:bg-purple-800 transition-colors shadow-md font-semibold whitespace-nowrap flex items-center justify-center">
+                                <span class="mr-2">✨</span> Reserve Your Spot
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
             </section>
 
             <!-- Resources & Strategies Section -->
@@ -250,7 +281,7 @@
                     <!-- Newsletters -->
                     <div class="bg-white p-6 rounded-lg shadow-lg">
                         <h4 class="text-2xl font-bold mb-4 flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3h2m0 0h2m0 0h2m0 0h2m0 0h2m0 0h2m0 0h2m-2 0h-2m-2 0h-2m-2 0H9m-2 0H7m-2 0H5" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3h2m0 0h2m0 0h2m0 0h2m0 0h2m0 0h2m0 0h2m0 0h2m-2 0h-2m-2 0h-2m-2 0H9m-2 0H7m-2 0H5" /></svg>
                             The Weekly Scholar
                         </h4>
                         <ul class="space-y-4">
@@ -326,7 +357,7 @@
                 </div>
                 <button id="return-home-from-hots-btn" class="hidden md:flex items-center text-gray-500 hover:text-blue-900 transition-colors">
                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-                    Back to Guide
+                    Back to Playbook
                 </button>
             </div>
 
@@ -481,7 +512,7 @@
                 </div>
                 <button id="return-home-from-objectives-btn" class="hidden md:flex items-center text-gray-500 hover:text-blue-900 transition-colors">
                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-                    Back to Guide
+                    Back to Playbook
                 </button>
             </div>
 
@@ -628,7 +659,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.79 4 4 0 1.98-1.79 4-4 4-1.742 0-3.223-.835-3.772-2M12 18.5v.01M12 4.5v.01M4.5 12v.01M19.5 12v.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <h1 class="text-3xl font-bold text-blue-900 mb-2">Need Assistance?</h1>
-            <p class="text-gray-600 mb-8">Contact Mr. Brandon for any questions or support with the T&L Guide.</p>
+            <p class="text-gray-600 mb-8">Contact Mr. Brandon for any questions or support with the T&L Playbook.</p>
             
             <div class="space-y-4 text-left bg-gray-50 p-6 rounded-lg">
                 <div>
@@ -841,4 +872,3 @@
 
 </body>
 </html>
-
