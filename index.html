@@ -255,16 +255,15 @@
                          <!-- Grid for filtering -->
                          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-                            <!-- Module: MAP Test Guide (Updated Icon) -->
-                            <div class="searchable-item h-full" data-keywords="map testing growth rit score assessment adaptive">
-                                <button onclick="window.location.hash='module-map'" class="block w-full text-left h-full">
-                                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300 text-center h-full border-l-4 border-orange-400 flex flex-col items-center justify-center">
+                             <!-- NEW: Twinkl Module (Moved to 1st position) -->
+                            <div class="searchable-item h-full" data-keywords="twinkl resources worksheets planning primary secondary">
+                                <button onclick="window.location.hash='module-twinkl'" class="block w-full text-left h-full">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300 text-center h-full border border-pink-100 flex flex-col items-center justify-center">
                                         <div class="mb-3 h-12 w-full flex items-center justify-center">
-                                             <!-- Using NWEA Logo -->
-                                            <img src="nwea_MAP_logo.jpg" alt="NWEA MAP Logo" class="h-10 object-contain">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Twinkl_Logo_300dpi.jpg" alt="Twinkl Logo" class="h-full object-contain">
                                         </div>
-                                        <h4 class="text-lg font-bold mb-2">MAP Growth Guide</h4>
-                                        <p class="text-sm text-gray-600">Understand the adaptive nature of MAP testing and RIT scores.</p>
+                                        <h4 class="text-lg font-semibold mb-2">Twinkl Resources</h4>
+                                        <p class="text-sm text-gray-600">Instant access to teacher-created planning and assessment materials.</p>
                                     </div>
                                 </button>
                             </div>
@@ -313,15 +312,16 @@
                                 </div>
                             </a>
                              
-                             <!-- NEW: Twinkl Module (Replaces Formative Assessment) -->
-                            <div class="searchable-item h-full" data-keywords="twinkl resources worksheets planning primary secondary">
-                                <button onclick="window.location.hash='module-twinkl'" class="block w-full text-left h-full">
-                                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300 text-center h-full border border-pink-100 flex flex-col items-center justify-center">
+                            <!-- Module: MAP Test Guide (Moved to former Twinkl position) -->
+                            <div class="searchable-item h-full" data-keywords="map testing growth rit score assessment adaptive">
+                                <button onclick="window.location.hash='module-map'" class="block w-full text-left h-full">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300 text-center h-full border-l-4 border-orange-400 flex flex-col items-center justify-center">
                                         <div class="mb-3 h-12 w-full flex items-center justify-center">
-                                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Twinkl_Logo_300dpi.jpg" alt="Twinkl Logo" class="h-full object-contain">
+                                             <!-- Using NWEA Logo -->
+                                            <img src="nwea_MAP_logo.jpg" alt="NWEA MAP Logo" class="h-10 object-contain">
                                         </div>
-                                        <h4 class="text-lg font-semibold mb-2">Twinkl Resources</h4>
-                                        <p class="text-sm text-gray-600">Instant access to teacher-created planning and assessment materials.</p>
+                                        <h4 class="text-lg font-bold mb-2">MAP Growth Guide</h4>
+                                        <p class="text-sm text-gray-600">Understand the adaptive nature of MAP testing and RIT scores.</p>
                                     </div>
                                 </button>
                             </div>
@@ -456,53 +456,128 @@
                     </div>
 
                     <!-- NEW: Question Transformation Lab -->
-                    <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden mb-12">
-                         <div class="bg-blue-900 p-6 text-white text-center">
-                            <h3 class="text-2xl font-bold">🛠️ Question Transformation Guide</h3>
-                            <p class="text-blue-200 mt-2">How to upgrade your questions from Low Order (LOTS) to High Order (HOTS)</p>
-                         </div>
-                         <div class="p-6 lg:p-10">
-                            <div class="space-y-6">
-                                <!-- Example 1 -->
-                                <div class="grid md:grid-cols-2 gap-4 items-center bg-gray-50 p-4 rounded-lg">
-                                    <div class="p-4 bg-white border-l-4 border-gray-400 rounded shadow-sm opacity-80">
-                                        <span class="text-xs font-bold text-gray-500 uppercase">Low Order (Recall)</span>
-                                        <p class="font-medium text-gray-800 mt-1">"What is photosynthesis?"</p>
-                                    </div>
-                                    <div class="hidden md:flex justify-center text-gray-400">
-                                        <svg class="w-6 h-6 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                                    </div>
-                                    <div class="p-4 bg-white border-l-4 border-green-500 rounded shadow-sm">
-                                        <span class="text-xs font-bold text-green-600 uppercase">High Order (Analyze/Evaluate)</span>
-                                        <p class="font-medium text-gray-800 mt-1">"Why would photosynthesis struggle to occur in a desert plant compared to a rainforest plant?"</p>
-                                    </div>
+                    <div class="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden mb-16">
+                        <div class="bg-gradient-to-r from-slate-800 to-blue-900 p-8 text-white">
+                            <div class="flex items-center justify-center mb-2">
+                                <span class="text-4xl mr-3">⚗️</span>
+                                <h3 class="text-3xl font-extrabold tracking-tight">Question Transformation Lab</h3>
+                            </div>
+                            <p class="text-blue-100 text-center font-medium text-lg">The Art of Upgrading Cognitive Demand</p>
+                        </div>
+                        
+                        <div class="p-8 lg:p-12 bg-gray-50">
+                            
+                            <!-- Example 1 -->
+                            <div class="relative bg-white rounded-2xl shadow-sm border border-gray-200 p-6 mb-8 group hover:shadow-md transition-shadow">
+                                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest border border-blue-200">
+                                    Science Example
                                 </div>
+                                
+                                <div class="flex flex-col md:flex-row items-stretch gap-6">
+                                    <!-- LOTS Side -->
+                                    <div class="flex-1 bg-red-50/50 rounded-xl p-6 border-l-4 border-red-300 relative">
+                                        <div class="flex justify-between items-start mb-3">
+                                            <span class="bg-red-100 text-red-700 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wide">Level 1: Remember</span>
+                                            <span class="text-2xl opacity-50">🧠</span>
+                                        </div>
+                                        <p class="text-gray-500 font-mono text-sm mb-2">The Ask:</p>
+                                        <p class="text-lg font-bold text-gray-800">"What is photosynthesis?"</p>
+                                        <p class="text-xs text-red-400 mt-3 italic">⚠️ Requires only memory recall.</p>
+                                    </div>
 
-                                 <!-- Example 2 -->
-                                <div class="grid md:grid-cols-2 gap-4 items-center bg-gray-50 p-4 rounded-lg">
-                                    <div class="p-4 bg-white border-l-4 border-gray-400 rounded shadow-sm opacity-80">
-                                        <span class="text-xs font-bold text-gray-500 uppercase">Low Order (Understand)</span>
-                                        <p class="font-medium text-gray-800 mt-1">"Identify the main character in the story."</p>
+                                    <!-- Transformation Arrow (Desktop) -->
+                                    <div class="hidden md:flex flex-col justify-center items-center w-16 relative">
+                                        <div class="h-full w-0.5 bg-gray-200 absolute"></div>
+                                        <div class="z-10 bg-white border-2 border-green-500 rounded-full p-2 text-green-600 shadow-sm">
+                                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                                        </div>
+                                        <div class="z-10 mt-2 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded-full whitespace-nowrap shadow-sm">
+                                            + Comparison & Context
+                                        </div>
                                     </div>
-                                    <div class="hidden md:flex justify-center text-gray-400">
-                                        <svg class="w-6 h-6 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                    
+                                    <!-- Transformation Arrow (Mobile) -->
+                                    <div class="flex md:hidden justify-center items-center py-2 text-green-500">
+                                        <svg class="w-8 h-8 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
                                     </div>
-                                    <div class="p-4 bg-white border-l-4 border-purple-500 rounded shadow-sm">
-                                        <span class="text-xs font-bold text-purple-600 uppercase">High Order (Create)</span>
-                                        <p class="font-medium text-gray-800 mt-1">"How would the story change if the main character made a different choice in Chapter 3?"</p>
-                                    </div>
-                                </div>
 
-                                <!-- Tip Box -->
-                                <div class="mt-4 p-4 bg-yellow-50 border border-yellow-200 rounded-lg flex items-start">
-                                    <span class="text-2xl mr-3">💡</span>
-                                    <div>
-                                        <h4 class="font-bold text-yellow-800">Transformation Tip</h4>
-                                        <p class="text-sm text-yellow-700">Add words like <strong>"Compare," "Justify," "Predict,"</strong> or <strong>"Design"</strong> to instantly elevate the cognitive demand.</p>
+                                    <!-- HOTS Side -->
+                                    <div class="flex-1 bg-green-50/50 rounded-xl p-6 border-l-4 border-green-500 relative">
+                                        <div class="flex justify-between items-start mb-3">
+                                            <span class="bg-green-100 text-green-700 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wide">Level 4: Analyze</span>
+                                            <span class="text-2xl opacity-50">🔬</span>
+                                        </div>
+                                        <p class="text-gray-500 font-mono text-sm mb-2">The Upgrade:</p>
+                                        <p class="text-lg font-bold text-gray-900">"Compare how photosynthesis differs in a cactus versus a fern given their environments."</p>
+                                        <p class="text-xs text-green-600 mt-3 italic">✅ Requires analysis of conditions and biological adaptation.</p>
                                     </div>
                                 </div>
                             </div>
-                         </div>
+
+                            <!-- Example 2 -->
+                            <div class="relative bg-white rounded-2xl shadow-sm border border-gray-200 p-6 group hover:shadow-md transition-shadow">
+                                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-purple-100 text-purple-800 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest border border-purple-200">
+                                    Literature Example
+                                </div>
+                                
+                                <div class="flex flex-col md:flex-row items-stretch gap-6">
+                                    <!-- LOTS Side -->
+                                    <div class="flex-1 bg-red-50/50 rounded-xl p-6 border-l-4 border-red-300 relative">
+                                        <div class="flex justify-between items-start mb-3">
+                                            <span class="bg-red-100 text-red-700 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wide">Level 2: Understand</span>
+                                            <span class="text-2xl opacity-50">📖</span>
+                                        </div>
+                                        <p class="text-gray-500 font-mono text-sm mb-2">The Ask:</p>
+                                        <p class="text-lg font-bold text-gray-800">"Identify the main character's decision in Chapter 3."</p>
+                                        <p class="text-xs text-red-400 mt-3 italic">⚠️ Requires identifying facts from text.</p>
+                                    </div>
+
+                                    <!-- Transformation Arrow (Desktop) -->
+                                    <div class="hidden md:flex flex-col justify-center items-center w-16 relative">
+                                        <div class="h-full w-0.5 bg-gray-200 absolute"></div>
+                                        <div class="z-10 bg-white border-2 border-purple-500 rounded-full p-2 text-purple-600 shadow-sm">
+                                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                                        </div>
+                                        <div class="z-10 mt-2 bg-purple-100 text-purple-800 text-[10px] font-bold px-2 py-1 rounded-full whitespace-nowrap shadow-sm">
+                                            + "What If" Scenario
+                                        </div>
+                                    </div>
+
+                                    <!-- Transformation Arrow (Mobile) -->
+                                    <div class="flex md:hidden justify-center items-center py-2 text-purple-500">
+                                        <svg class="w-8 h-8 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                                    </div>
+
+                                    <!-- HOTS Side -->
+                                    <div class="flex-1 bg-purple-50/50 rounded-xl p-6 border-l-4 border-purple-500 relative">
+                                        <div class="flex justify-between items-start mb-3">
+                                            <span class="bg-purple-100 text-purple-700 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wide">Level 6: Create</span>
+                                            <span class="text-2xl opacity-50">🚀</span>
+                                        </div>
+                                        <p class="text-gray-500 font-mono text-sm mb-2">The Upgrade:</p>
+                                        <p class="text-lg font-bold text-gray-900">"Predict how the story would end if the character made the opposite choice in Chapter 3."</p>
+                                        <p class="text-xs text-purple-600 mt-3 italic">✅ Requires synthesis of character traits and plot projection.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pro Tip Box -->
+                            <div class="mt-8 p-5 bg-gradient-to-r from-yellow-50 to-orange-50 border border-yellow-200 rounded-xl flex items-start shadow-sm">
+                                <div class="bg-yellow-100 p-2 rounded-lg mr-4">
+                                    <span class="text-2xl">💡</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-yellow-900 text-lg">Instant Upgrade Formula</h4>
+                                    <p class="text-yellow-800 mt-1">Don't rewrite the whole lesson. Just add one of these stems to your existing question:</p>
+                                    <div class="flex flex-wrap gap-2 mt-3">
+                                        <span class="bg-white border border-yellow-200 text-yellow-800 px-3 py-1 rounded-md text-sm font-semibold shadow-sm">"How would you change..."</span>
+                                        <span class="bg-white border border-yellow-200 text-yellow-800 px-3 py-1 rounded-md text-sm font-semibold shadow-sm">"Justify why..."</span>
+                                        <span class="bg-white border border-yellow-200 text-yellow-800 px-3 py-1 rounded-md text-sm font-semibold shadow-sm">"What if..."</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
                     <!-- Call to Action -->
