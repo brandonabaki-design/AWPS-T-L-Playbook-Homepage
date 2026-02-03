@@ -193,6 +193,15 @@
                  <h3 class="text-3xl font-bold text-blue-900 mb-2 text-center">Tools and Resources</h3>
                  <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">Access a library of proven teaching strategies, innovative tools, and downloadable resources to support your daily instruction.</p>
                  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <!-- NEW Tool: MAP Test Guide -->
+                    <button id="map-details-btn" class="block w-full text-left">
+                        <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300 text-center h-full border-l-4 border-orange-400">
+                            <div class="text-4xl text-orange-500 mb-3">📈</div>
+                            <h4 class="text-lg font-bold mb-2">MAP Growth Guide</h4>
+                            <p class="text-sm text-gray-600">Understand the adaptive nature of MAP testing and RIT scores.</p>
+                        </div>
+                    </button>
                     
                     <!-- Tool 1: Gemini Storybooks -->
                     <a href="https://gemini.google/overview/storybook/" target="_blank" rel="noopener noreferrer" class="block">
@@ -680,6 +689,77 @@
         </div>
     </section>
 
+    <!-- NEW: MAP Details Section (Hidden by default) -->
+    <section id="map-details-section" class="hidden min-h-screen bg-gray-100 p-4 lg:p-12">
+        <div class="container mx-auto max-w-5xl">
+            <!-- Header -->
+            <div class="mb-8 flex items-center justify-between">
+                <div>
+                    <h1 class="text-3xl lg:text-4xl font-extrabold text-blue-900 leading-tight">MAP Growth Testing</h1>
+                    <p class="text-orange-600 font-medium text-lg mt-2">Measures of Academic Progress</p>
+                </div>
+                <button id="return-home-from-map-btn" class="hidden md:flex items-center text-gray-500 hover:text-blue-900 transition-colors">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Back to Guide
+                </button>
+            </div>
+
+            <!-- Video Container -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
+                <div class="aspect-video bg-black relative w-full">
+                    <iframe class="w-full h-full absolute top-0 left-0" 
+                            src="https://www.youtube.com/embed/79h958Qd8sA" 
+                            title="What is the MAP Growth test?" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="p-6 bg-orange-50 border-t border-orange-100">
+                    <h3 class="font-bold text-orange-900 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        About this Module
+                    </h3>
+                    <p class="text-sm text-orange-800 mt-1">An essential guide for teachers and parents to understand how MAP Growth works, what RIT scores mean, and how to use the data to support student learning.</p>
+                </div>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="bg-blue-100 p-2 rounded-full mr-3 text-blue-600 text-sm">🧩</span>
+                        What is MAP Growth?
+                    </h3>
+                    <p class="text-gray-600 mb-4">MAP Growth is not a traditional standardized test. It is an <strong>adaptive assessment</strong> designed to measure a student's academic growth over time, regardless of their grade level.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> If a student answers correctly, the next question gets harder.</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> If they answer incorrectly, the next question gets easier.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="bg-purple-100 p-2 rounded-full mr-3 text-purple-600 text-sm">📊</span>
+                        Understanding RIT Scores
+                    </h3>
+                    <p class="text-gray-600 mb-4">The result of the test is a <strong>RIT Score</strong> (Rasch Unit). Think of this like a ruler for academic growth.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="text-purple-500 mr-2">➜</span> It is an equal-interval scale (like inches on a ruler).</li>
+                        <li class="flex items-start"><span class="text-purple-500 mr-2">➜</span> It tracks progress from year to year, not just within a single grade.</li>
+                        <li class="flex items-start"><span class="text-purple-500 mr-2">➜</span> It connects directly to instructional areas students are ready to learn.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Mobile Return Button -->
+            <div class="mt-8 md:hidden text-center">
+                 <button class="text-gray-500 hover:text-blue-900 underline" onclick="showHomePage()">
+                    Return to Homepage
+                </button>
+            </div>
+        </div>
+    </section>
+
     <!-- Help Section (Hidden by default) -->
     <section id="help-section" class="hidden min-h-screen bg-gray-50 flex items-center justify-center p-4">
         <div class="text-center bg-white p-8 sm:p-12 rounded-lg shadow-xl max-w-md w-full">
@@ -731,8 +811,9 @@
         // Page visibility logic
         const mainContent = document.getElementById('main-content');
         const maintenanceSection = document.getElementById('maintenance-section');
-        const hotsDetailsSection = document.getElementById('hots-details-section'); // Updated
+        const hotsDetailsSection = document.getElementById('hots-details-section');
         const objectivesDetailsSection = document.getElementById('objectives-details-section');
+        const mapDetailsSection = document.getElementById('map-details-section'); // New MAP Section
         const helpSection = document.getElementById('help-section');
         
         const maintenanceLinks = document.querySelectorAll('.maintenance-link');
@@ -740,11 +821,15 @@
         
         const hotsDetailsBtn = document.getElementById('hots-details-btn');
         const returnHomeFromHotsBtn = document.getElementById('return-home-from-hots-btn');
-        const returnHomeFromHotsBottomBtn = document.getElementById('return-home-from-hots-bottom-btn'); // New Bottom Button
+        const returnHomeFromHotsBottomBtn = document.getElementById('return-home-from-hots-bottom-btn');
 
         const objectivesDetailsBtn = document.getElementById('objectives-details-btn');
         const returnHomeFromObjectivesBtn = document.getElementById('return-home-from-objectives-btn');
         const returnHomeBottomBtn = document.getElementById('return-home-bottom-btn');
+
+        // New MAP Buttons
+        const mapDetailsBtn = document.getElementById('map-details-btn');
+        const returnHomeFromMapBtn = document.getElementById('return-home-from-map-btn');
 
         const askForHelpBtn = document.getElementById('ask-for-help-btn');
         const returnHomeFromHelpBtn = document.getElementById('return-home-from-help-btn');
@@ -817,6 +902,13 @@
             }
         }
 
+        // New MAP Page Function
+        function showMapPage() {
+            hideAllSections();
+            mapDetailsSection.classList.remove('hidden');
+            window.scrollTo(0, 0);
+        }
+
         function showHelpPage() {
             hideAllSections();
             helpSection.classList.remove('hidden');
@@ -833,6 +925,12 @@
             if(video) {
                 video.pause();
             }
+            // Stop MAP video iframe (reload it to stop playback)
+            const mapIframe = mapDetailsSection.querySelector('iframe');
+            if(mapIframe) {
+                const src = mapIframe.src;
+                mapIframe.src = src;
+            }
         }
 
         function hideAllSections() {
@@ -840,6 +938,7 @@
             maintenanceSection.classList.add('hidden');
             hotsDetailsSection.classList.add('hidden');
             objectivesDetailsSection.classList.add('hidden');
+            mapDetailsSection.classList.add('hidden'); // Hide MAP Section
             helpSection.classList.add('hidden');
         }
 
@@ -871,7 +970,6 @@
             returnHomeFromHotsBottomBtn.addEventListener('click', showHomePage);
         }
 
-
         if (objectivesDetailsBtn) {
             objectivesDetailsBtn.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -883,6 +981,17 @@
         }
         if (returnHomeBottomBtn) {
             returnHomeBottomBtn.addEventListener('click', showHomePage);
+        }
+
+        // New MAP Event Listeners
+        if (mapDetailsBtn) {
+            mapDetailsBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                showMapPage();
+            });
+        }
+        if (returnHomeFromMapBtn) {
+            returnHomeFromMapBtn.addEventListener('click', showHomePage);
         }
 
         if (askForHelpBtn) {
@@ -900,4 +1009,3 @@
 
 </body>
 </html>
-
